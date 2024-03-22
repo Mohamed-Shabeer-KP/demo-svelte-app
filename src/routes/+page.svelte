@@ -1,6 +1,7 @@
 <script>
 import Addition from "./Addition.svelte";
 import Nested from "./Nested.svelte";
+import { store_val } from "./stores.js";
 
 const days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
 let employees = [
@@ -65,3 +66,5 @@ function deleteEmployee() {
 <hr>
 
 <Addition />
+
+<p> {$store_val}</p>
