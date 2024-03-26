@@ -1,0 +1,11 @@
+/* Write your global styles here, in PostCSS syntax */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root [data-theme='skeleton'] {
+	--theme-rounded-base: 20px;
+	--theme-rounded-container: 4px;
+}
+
+html, body { @apply h-full overflow-hidden; }
